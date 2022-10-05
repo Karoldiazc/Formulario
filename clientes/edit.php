@@ -1,16 +1,18 @@
 <?php
 include('../config/config.php');
-include('cliente.php')
-$p = new cliente();
-$dp = $p ->getOne($_GET['id']);
+include('cliente.php');
+$p = new clientes();
+$dp = mysqli_fetch_object($p->getOne($_GET['id']));
 
+
+if (isset($_POST) && !empty($_POST)){
 $update = $p->update($_POST);
 if ($update){
     $mensaje='<div class="alert alert-success" role="lert">Sesión modificada con exito</div>';
 }else{
     $mensaje = '<div class="alert alert-danger" role="alert" > Error! </div>';
 }
-
+}
 
 
 ?>
@@ -18,8 +20,9 @@ if ($update){
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <tittle> Modificar Cliente </title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -66,19 +69,6 @@ if ($update){
     </div>
     </div>
 
-    <div class="row mb-2">
-        <div class="col">
-        <input type="datetime-local" name="sessionDate" id="sessionDate" require class="form-control" value="<?= $date->format('Y-m-d\TH:i') ?>"/>
-    </div>
-    <div class="col">
-    <input type="text" name="duration" id="duration" placeholder="Duración de la sesión" require class="form-control" value="<?= $date->duration ?>" /> 
-    </div>
-    </div>
-    <div class="rowmb-2">
-        <div class="col">
-            <input type="file" name="image" id="image" class="form-control" />
-    </div>
-    </div>
 
     <button class="btn btn-success">Modificar </button>
     </form>

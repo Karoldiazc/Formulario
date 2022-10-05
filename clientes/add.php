@@ -3,7 +3,7 @@ include_once('../config/config.php');
 include_once('cliente.php');
 
 if (isset($_POST) && !empty($_POST)){
-    $p = new cliente();
+    $p = new clientes();
 
 
 $save = $p->save($_POST);

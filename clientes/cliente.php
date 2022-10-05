@@ -38,6 +38,7 @@ class clientes{
         $email = $params ['email'];
         $celular = $params['celular'];
         $utiles = $params['utiles'];
+        $id = $params['id'];
 
         $update = "UPDATE client SET nombres='$nombres', apellidos='$apellidos', email='$email', 
         celular='$celular', utiles='$utiles' WHERE id = $id ";
