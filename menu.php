@@ -4,7 +4,7 @@
       <a class="nav-link" href="<?= ROOT ?>/clientes/index.php"> Ver clientes </a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="<?= ROOT ?>/clientes/add.php"> Registrar cliente </a>
+  <a class="nav-link" href="<?= ROOT ?>/admi.html"> Cerrar sesion </a>
 </li>
 </ul>
 </nav>

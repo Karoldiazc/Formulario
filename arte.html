@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARCOIRIS - Papelería</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body style="width:100% !important;">
+  <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
+    onclick="window.location.href='https://wa.me/573213240255?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+
+  <!-- Menú Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient inicio">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> </a> <img src="imagenes/ARCOIRIS.png" class="img-fluid" width="150px"
+        height="100px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"> Nosotros </a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="usuario.html"> Usuario 👤 </a>
+          </li>  REVISAR SI DEBO BORRARLO PORQUE DEBO UNIRLO AL ADMI, PARA INICIAR SESIÓN-->
+          <li class="nav-item">
+            <a class="nav-link" href="#favoritos"> Favorito 🤎 </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../catalogo.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catálogo 📖
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#escuela">Escuela</a></li>
+              <li><a class="dropdown-item" href="#oficina">Oficina</a></li>
+              <li><a class="dropdown-item" href="#">Kit profesional</a></li>
+              <li><a class="dropdown-item" href="#arte">Arte</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Todo de Arcoiris </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./clientes/add.php">Contáctanos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control ml-2 btn btn-light" type="search" placeholder="¿Qué necesitas hoy?"
+            aria-label="Search">
+          <button class="btn btn-outline-success btn btn-outline-dark" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+  <!-- SECCIÓN ARTE -->
+  <div class="row">
+    <div class="col-3">
+      <nav id="navbar-example3" style="height: 2100px !important;"
+        class="h-90 flex-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-pills" href="#pinturas"> 🎨 PINTURAS </a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#oleo"> Óleo</a>
+            <a class="nav-link ms-3 my-1" href="#acrilica"> Acrílica</a>
+          </nav>
+          <a class="nav-pills" href="#pinceles"> 🖌 PINCELES </a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#plano">Plano</a>
+            <a class="nav-link ms-3 my-1" href="#abanico">Abanico</a>
+            <a class="nav-link ms-3 my-1" href="#redondo">Redondo</a>
+          </nav>
+        </nav>
+        <a class="nav-pills" href="#lienzos"> 📝 LIENZOS </a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#algodon">Algodón</a>
+          <a class="nav-link ms-3 my-1" href="#lino">Lino</a>
+          <a class="nav-link ms-3 my-1" href="#sintetica">Sintética</a>
+        </nav>
+        <a class="nav-pills" href="#tipsarte"> 📌 TIPS </a>
+        <nav class="nav nav-pills flex-column">
+        </nav>
+      </nav>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+        class="scrollspy-example-2" tabindex="0">
+        <div id="cuadernos">
+
+          <!-- PARA HACER ARTE -->
+          <h5 class="text-center">Queremos inspirarte para que puedas despejar tu mente</h5>
+
+
+          <!-- PINTURAS -->
+          <div id="pinturas"></div>
+          <h4>Pinturas </h4>
+          <p></p>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <div id="oleo"></div>
+            <h5 class="card-title text-center">Óleo</h5>
+            <br>
+            <p class="card-text text-center">La pintura al óleo consiste en mezclar pigmentos con aglutinante a base de
+              aceites,
+              estos últimos normalmente son de origen vegetal. La pintura al óleo tiene un secado más lento,
+              lo que facilita la mezcla de colores, la correción en la ejecución y una conservación del color mayor.</p>
+            <img src="imagenes/oleo.jpg" class="card-img-top " alt="..." width="60px" height="160"> <br>
+            <div class="card-body">
+              <p class="card-text text-center">De todos los colores por 12 pinturas</p>
+              <p class="card-text text-center"><small class="text-muted">$98.900</small></p>
+              <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+                href="https://web.whatsapp.com">COMPRAR</a>
+            </div>
+          </div>
+          <div class="card">
+            <div id="acrilica"></div>
+            <h5 class="card-title text-center">Acrílica</h5>
+            <br>
+            <p class="card-text text-center">La pintura acrílica es una pintura de secado rápido donde la
+              base de su pigmentación está formada por una emulsión de polímero acrílico.
+              Este componente es un derivado del látex, encargado de proporcionarle dureza y resistencia a
+              la pintura una vez seco.</p>
+            <br>
+            <img src="imagenes/acrilica.webp" class="card-img-top" alt="..." width="70px" height="160">
+            <div class="card-body">
+              <p class="card-text text-center">De todos los colores por ud</p>
+              <p class="card-text text-center"><small class="text-muted">$4.900</small></p>
+              <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+                href="https://web.whatsapp.com">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <p></p>
+      </div>
+
+      <!-- PINCELES -->
+      <div id="pinceles">
+        <h4>Pinceles</h4>
+        <p></p>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <div id="plano"></div>
+          <h5 class="card-title text-center">Planos</h5>
+          <br>
+          <p class="card-text text-center">Todos los pelos o cerdas del pincel están colocados a la misma altura y
+            poseen el mismo tamaño. Su función principal es la de mezclar colores,
+            esparcir la pintura, realizar líneas de diferentes tipos, hacer pinceladas cuadradas y más.</p>
+          <img src="imagenes/pincelplano.jpg" class="card-img-top " alt="..." width="90px" height="160"> <br>
+          <div class="card-body">
+            <p class="card-text text-center">De distintos tamaños</p>
+            <p class="card-text text-center"><small class="text-muted">Grandes $3.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Medianos $2.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Pequeños $1.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card">
+          <div id="abanico"></div>
+          <h5 class="card-title text-center">Abanico</h5>
+          <br>
+          <p class="card-text text-center">Reciben este nombre ya que su forma se asemeja mucho a la de un abanico.
+            Son ideales para realizar follaje, pastos, entre otros efectos. Con este tipo de pincel crearás texturas y
+            degradados suaves. Aunque al comienzo te puede resultar difícil adaptarte a su uso y mantenimiento,
+            siempre es útil tener uno de estos entre tus herramientas.</p>
+          <br>
+          <img src="imagenes/pincelabanico.jpg" class="card-img-top" alt="..." width="70px" height="160">
+          <div class="card-body">
+            <p class="card-text text-center">De distintos tamaños</p>
+            <p class="card-text text-center"><small class="text-muted">Grandes $3.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Medianos $2.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Pequeños $1.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card">
+          <div id="redondo"></div>
+          <h5 class="card-title text-center">Redondos</h5>
+          <br>
+          <p class="card-text text-center">Los pinceles para pintar redondos son empleados generalmente para hacer
+            líneas y detalles.
+            Al pintar cuadros con pinceles redondos, considera el tipo de pelo que tienen.
+            El mejor para el óleo son los de pelo cerda, ya que los de marta cargan mucha pintura, lo que puede
+            convertirse en un problema.</p>
+          <br>
+          <img src="imagenes/pincelredondo.jpg" class="card-img-top" alt="..." width="70px" height="160">
+          <div class="card-body">
+            <p class="card-text text-center">De distintos tamaños</p>
+            <p class="card-text text-center"><small class="text-muted">Grandes $3.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Medianos $2.900</small></p>
+            <p class="card-text text-center"><small class="text-muted">Pequeños $1.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <p></p>
+
+
+      <!-- LIENZOS -->
+      <div id="lienzos">
+        <h4>Lienzos</h4>
+        <p></p>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <div id="algodon"></div>
+          <h5 class="card-title text-center">Algodón</h5>
+          <br>
+          <p class="card-text text-center">La razón de que los lienzos de algodón sean de los más
+            utilizados reside en su gran relación calidad, precio, además, es una tela muy agradecida, uniforme y
+            es la más recomendada para pintores principiantes.
+            Asimismo, aguantan la humedad bastante bien, aunque recomendamos aplicar sobre el lienzo una capa de
+            imprimación antes de comenzar a pintar la obra.</p>
+          <img src="imagenes/algodon.jpg" class="card-img-top " alt="..." width="90px" height="160"> <br>
+          <div class="card-body">
+            <p class="card-text text-center">Lienzo 100% Algodón X Metro</p>
+            <p class="card-text text-center"><small class="text-muted"> $23.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card">
+          <div id="lino"></div>
+          <h5 class="card-title text-center">Lino</h5>
+          <br>
+          <p class="card-text text-center">A diferencia del lienzo de algodón, aquel confeccionado con tela de lino es
+            más
+            irregular, si bien es realmente valorado entre los artistas por su gran calidad, durabilidad, rigidez y,
+            sobre todo,
+            por el acabado superficial que permite que pueda adquirir la obra, ya que se puede jugar con diferentes
+            texturas.</p>
+          <br>
+          <img src="imagenes/lino.jpg" class="card-img-top" alt="..." width="70px" height="160">
+          <div class="card-body">
+            <p class="card-text text-center">Material:Linen X Metro </p>
+            <p class="card-text text-center"><small class="text-muted">$35.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card">
+          <div id="sintetica"></div>
+          <h5 class="card-title text-center">Sintética</h5>
+          <br>
+          <p class="card-text text-center">En los últimos tiempos, la aparición de nuevas opciones para la fabricación
+            de
+            estos soportes ha dado lugar a la creación de lienzos con fibras sintéticas, mucho más baratos que las
+            opciones anteriores, aunque esto se verá reflejado en los resultados.</p>
+          <br>
+          <br>
+          <img src="imagenes/sintetica.jpg" class="card-img-top" alt="..." width="70px" height="160">
+          <div class="card-body">
+            <p class="card-text text-center">Lienzo ecológico X rollo 50 Mts</p>
+            <p class="card-text text-center"><small class="text-muted">Grandes $32.900</small></p>
+            <a class="product-functional-buttons product-functional-buttons-bottom btn btn-info" type="submit"
+              href="https://web.whatsapp.com">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <h2 class="text-center " id="favoritos"> TIPS </h2>
+  <div class="row contenedor arte" style=" background-color: rgb(225, 16, 100) !important; height:385px !important">
+    <div class="row contenedor">
+      <div class="col-6 tabla ">
+        <dl>
+          <br>
+          <br>
+          <dt class="text-center">¿Quieres que tu oficina luzca mejor? </dt>
+          <br>
+          <dd class="text-center"> 1. Escoge el tipo de pintura adecuado. </dd>
+          <dd class="text-center"> 2. Prepara bien el espacio de trabajo. </dd>
+          <dd class="text-center"> 3. Ubícate en un lugar con suficiente luz. </dd>
+          <dd class="text-center"> 4. Ubícate en un lugar con suficiente luz. </dd>
+          <dd class="text-center"> 5. No uses demasiada pintura.. </dd>
+          <dd class="text-center"> 6. Corrige los errores en la pintura acrílica. </dd>
+          <dd class="text-center"> 7. No olvides aplicar la imprimación al lienzo. </dd>
+          <dd class="text-center"> 8. Haz un fondo. </dd>
+          <div>
+          </div>
+        </dl>
+      </div>
+      <div class="col-6 "><iframe width="460" height="384" src="https://www.youtube.com/embed/-Gjqc_NYv1Y"
+        title="24 TÉCNICAS DE PINTURA FÁCILES PERO HERMOSAS" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></div>
+  </div>
+</div>
+   <!-- FOOTER PROFE -->
+   <br>
+   <br>
+       <div class="row footer">
+         <div class="col-6">
+           <h6 class="text-center linea" id="ubicacion"> <h1>SOBRE NOSOTROS</h1> </h6>
+           <p class="text-center">Atención unicamente virtual</p>
+           <p class="text-center">3213240255 - 5482655 </p>
+           <p class="text-center"> <strong>Lun-Sab 8am-6pm</strong>  </p>
+           <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3445390192646!2d-74.2274485852956!3d4.7100781428878085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f78020ab43d09%3A0xc375723c1a9367b5!2sParque%20Cultural%20de%20Mosquera!5e0!3m2!1ses!2sco!4v1663443928306!5m2!1ses!2sco"
+             width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+             referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <br>
+         </div>
+ 
+         <div class="col-6">
+           <h4 class="text-center linea" id="contactanos"> <h1>SIGUENOS</h1></h4>
+           <br>
+           <a href="https://web.whatsapp.com/" target="_blank"> <img aling="center" src="imagenes/whatsapp.webp" alt="" width="80" height="40"> WhatsApp</a> 
+           <a href="https://www.instagram.com/" target="_blank">  <img src="imagenes/instagram.png" alt="" width="70" height="40">Instagram</a> 
+           <a href="https://es-la.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="" width="70" height="40"> Facebook </a> 
+           <br>
+           <br>
+           <br>
+             <img src="imagenes/ARCOIRIS.png" alt="Logo de Arcoiris" width="150" height="100">  
+         </div>
+         
+         <br>
+         <small class="text-center">&copy;2022 • <b>Arcoiris</b> -Todos los Derechos reservados. </small>
+         <br>
+       </div>
+     </div>
+   </div>
+  
+   <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper, js then Bootstrap JS -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+<script src="http"></script>
+
+
+</body>
+
+</html>

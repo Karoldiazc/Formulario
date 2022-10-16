@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARCOIRIS - Papelería</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body style="width:100% !important;">
+
+  <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" 
+  onclick="window.location.href='https://wa.me/573213240255?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+  
+  
+  
+  <!-- Menú Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient inicio">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> </a> <img src="imagenes/ARCOIRIS.png" class="img-fluid" width="150px"
+        height="100px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nosotros.html"> Nosotros </a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="usuario.html"> Usuario 👤 </a>
+          </li>  REVISAR SI DEBO BORRARLO PORQUE DEBO UNIRLO AL ADMI, PARA INICIAR SESIÓN-->
+          <li class="nav-item">
+            <a class="nav-link" href="#favoritos"> Favorito 🤎 </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../catalogo.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catálogo 📖
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#escuela">Escuela</a></li>
+              <li><a class="dropdown-item" href="#oficina">Oficina</a></li>
+              <li><a class="dropdown-item" href="#">Kit profesional</a></li>
+              <li><a class="dropdown-item" href="#arte">Arte</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Todo de Arcoiris </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./clientes/add.php">Contáctanos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control ml-2 btn btn-light" type="search" placeholder="¿Qué necesitas hoy?"
+            aria-label="Search">
+          <button class="btn btn-outline-success btn btn-outline-dark" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+  <!-- <link rel="stylesheet" href="css/style.css" href=" style.css">-->
+  <header style="width: 100%; height: 70px;" class="text-center">
+    <h1 class="linea"> <span> Pinta y diseña tu sueño de arcoiris </span> </h1>
+  </header>
+
+  <!-- Carousel  -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="imagenes/banner arte.png" class="d-block w-100" alt="auto" width="300" height="450">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/banner emprendedores.png" class="d-block w-100" alt="auto" width="300" height="450">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/banner escuela.png" class="d-block w-100" alt="auto" width="300" height="450">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <br>
+
+  <!-- TARJETAS -->
+  <h2 class="text-center linea" id="favoritos"> <span> NUESTRAS SECCIONES FAVORITAS </span></h2>
+
+  <div class="container">
+    <p class="text-center parrafo1"> <span> Sabemos cuánto te gustan las promos y los descuentos, por eso creamos esta
+        sección para ti 🥰 </span> </p>
+    <div class="card-group">
+      <div class="card" id="escuela">
+        <div class="card text-center">
+          <img src="imagenes/utiles.jpg" class="card-img-top" alt="..." width="230px" height="250">
+          <div class="card-body">
+            <h5 class="card-title">VUELVE A CLASE </h5>
+            <p class="card-text-center">Aquí encontrarás todo lo que estabas buscando para tu regreso a clases.</p>
+            <p class="card-text-center"><small class="text-muted"> Tenemos los mejores descuentos. </small></p>
+            <a href="utiles.html" class="btn btn-info nav-link active" aria-current="page"> UTILES </a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card" id="oficina">
+        <div class="card text-center">
+          <img src="imagenes/oficina.jpg" class="card-img-top" alt="..." width="230px" height="250">
+          <div class="card-body">
+            <h5 class="card-title">OFICINA</h5>
+            <p class="card-text-center">Sabemos que te gusta trabajar de la mejor forma, por eso tenemos lo ideal para
+              ti.
+            </p>
+            <p class="card-text-center"><small class="text-muted">Encuentra el kit que mejor te parezca</small></p>
+            <a href="materiales.html" class="btn btn-warning nav-link active" aria-current="page"> MATERIALES </a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card" id="arte">
+        <div class="card text-center">
+          <img src="imagenes/artelienzos.jpg" class="card-img-top" alt="..." width="230px" height="250">
+          <div class="card-body">
+            <h5 class="card-title">HAZ ARTE </h5>
+            <p class="card-text-center">Muchas veces te surge un bloqueo mental, ¿verdad?, no te procupes, en esta
+              sección
+              encontrarás lo necesario para que tu imaginación vuele.</p>
+            <p class="card-text-center"><small class="text-muted">Te dejamos tips para despejar tu mente</small></p>
+            <a href="arte.html" class="btn btn-success nav-link active" aria-current="page"> HAZLO </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- Tarjeta Emprendedores -->
+  <h2 class="text-center linea"> <span> ¿ERES EMPRENDEDOR? </span></h2>
+  <div class="container">
+    <p class="text-center parrafo1"> <span> Queremos acompañarte en el fantástico sueño que tienes en mente 💭 </span>
+    </p>
+    <div class="card text-bg-dark "> <!-- REVISAR COMO PONGO UN BOTON EN LA IMAGEN -->
+      <img src="imagenes/Emprendedores.png" class="card-img" alt="..." width="530px" height="350">
+      <div class="card-img-overlay">
+        <h5 class="card-title"></h5>
+        <p class="card-text-center"> </p>
+        <p class="card-text-center"><small></small></p>
+        <a class="btn btn-dark" type="button" href="emprendedores.html">Quiero más info 👆🏻 </a> 
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- SECCIÓN 2 PROMOS -->
+  <h2 class="text-center linea"> <span> PROMOCIONES Y KITS </span></h2>
+  <p class="text-center parrafo1"> <span> ⏳ No te pierdas de nuestros super descuentos en tus secciones favoritas 📢
+    </span> </p>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <div class="card text-center">
+            <img class="card-img-top" src="imagenes/mochila.jpg" alt="escolar" width="210px" height="230">
+            <div class="card-body"></div>
+            <h5 class="card-tittle"><strong>ESCOLAR</strong> </h5>
+            <p class="card-text"> Aprovecha las promociones y descuentos escolares </p>
+            <a href="#">🛍️</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="card text-center">
+            <img class="card img-top" src="imagenes/laptop.png" alt="oficina" width="230px" height="250">
+            <div class="card-body">
+              <h5 class="card-tittle"><strong>OFICINA</strong></h5>
+              <p class="card-text"> Haz que tus colaboradores se sientan a gusto</p>
+              <a href="#">🛍️</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="card text-center">
+            <img class="card img-top" src="imagenes/bombillo profesional.png" alt="profesional" width="230px"
+              height="250">
+            <div class="card-body">
+              <h5 class="card-tittle"><strong>KIT PROFESIONAL</strong></h5>
+              <p class="card-text">Inicia esta etapa profesional con nosotros </p>
+              <a href="#">🛍️</a>
+            </div>
+          </div>
+          <div>
+          </div>  
+          </div>
+          <a class="btn btn-warning" type="button" href="promociones.html">😱 QUIERO VER LAS PROMOS 😱 </a>   
+  </section>
+  <br>
+  <br>
+  
+
+
+  <!-- Estructura div contenedor -->
+  <h2 class="text-center linea" id="favoritos"> <span> LETTERING </span></h2>
+  <div class="container">
+    <div class="row contenedor">
+      <div class="col-6 tabla barra">
+        <dl>
+          <dt>¿Te gusta el lettering? </dt>
+          <dd> Consiste en dibujar letras a mano. Es diferente a la caligrafía, donde se usa <strong> trazos </strong>
+            básicos para formar letras y palabras. </dd>
+          <div>
+            <br>
+            <br>
+            <a href="lettering.html" class="btn btn-warning nav-link active" aria-current="page">
+              <div>Quiero aprender</div>
+            </a>
+          </div>
+        </dl>
+      </div>
+      <div class="col-6 video video"> <iframe width="440" height="210 " src="https://www.youtube.com/embed/S7UlEt2fpGU"
+          title="¿QUÉ ES la caligrafía y qué es el lettering | TECK24 | Domestika" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- FOOTER PROFE -->
+  <br>
+  <br>
+      <div class="row footer">
+        <div class="col-6">
+          <h6 class="text-center linea" id="ubicacion"> <h1>SOBRE NOSOTROS</h1> </h6>
+          <p class="text-center">Atención unicamente virtual</p>
+          <p class="text-center">3213240255 - 5482655 </p>
+          <p class="text-center"> <strong>Lun-Sab 8am-6pm</strong>  </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3445390192646!2d-74.2274485852956!3d4.7100781428878085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f78020ab43d09%3A0xc375723c1a9367b5!2sParque%20Cultural%20de%20Mosquera!5e0!3m2!1ses!2sco!4v1663443928306!5m2!1ses!2sco"
+            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br>
+        </div>
+
+        <div class="col-6">
+          <h4 class="text-center linea" id="contactanos"> <h1>SIGUENOS</h1></h4>
+          <br>
+          <a href="https://web.whatsapp.com/" target="_blank"> <img aling="center" src="imagenes/whatsapp.webp" alt="" width="80" height="40"> WhatsApp</a> 
+          <a href="https://www.instagram.com/" target="_blank">  <img src="imagenes/instagram.png" alt="" width="70" height="40">Instagram</a> 
+          <a href="https://es-la.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="" width="70" height="40"> Facebook </a> 
+          <br>
+          <br>
+          <br>
+            <img src="imagenes/ARCOIRIS.png" alt="Logo de Arcoiris" width="150" height="100">  
+        </div>
+        
+        <br>
+        <small class="text-center">&copy;2022 • <b>Arcoiris</b> -Todos los Derechos reservados. </small>
+        <br>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper, js then Bootstrap JS -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="http"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+body {
+    font-family: 'shadows Into Light', cursive;
+/*     width: 900px; */
+  /*   margin: 0 auto; */
+    background-color: rgb(255, 255, 255);
+
+}
+
+ /* BARRA DE NAVEGACIÓN */
+.inicio {
+    background-color: rgb(234, 210, 249) !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+/* SLOGAN LÍNEAS DECORATIVAS */
+h1 {
+    font: 33px Forte;
+    margin-top: 30px;
+    text-align: center;
+}
+h1.linea {
+    position: relative;
+    z-index: 1;
+}
+h1.linea:before {
+    border-top: 3px solid #9a25ee;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h1.linea span {
+    background: #fff;
+    padding: 0 15px;
+}
+
+/* SECCIONES FAV Y EMPRENDEDORES */
+h2 {
+    font: 33px Bradley Hand ITC;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2.linea {
+    position: relative;
+    z-index: 1;
+}
+
+h2.linea:before {
+    border-top: 3px solid #1dda72;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h2.linea span {
+    background: #fff;
+    padding: 0 15px;
+}
+/* Párrafo 1 */
+.parrafo1{
+    background-color: rgb(190, 248, 187);
+    padding: 0 15px;
+}
+
+
+/* LETTERING */
+.barra {
+    background-color: rgb(225, 16, 100) !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.lettering {
+    background-color: rgb(225, 162, 16) !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.video {
+    background-color: rgb(225, 16, 100) !important;
+    max-width: 75%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* PIE DE PÁGINA */
+    h4 {
+        font: 33px Bodoni MT Black;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    h4.linea {
+        position: relative;
+        z-index: 1;
+    }
+    
+    h4.linea:before {
+        border-top: 3px solid #030303;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+    
+    h4.linea span {
+        background: rgb(0, 0, 0);
+        padding: 0 15px;
+    }   
+
+/* PROMOCIONES Y KITS */
+h5{
+    font: 33px Bodoni MT rgb(252, 231, 204);
+    background: rgb(242, 225, 194);
+    padding: 0 15px;
+}  
+
+
+/* UBICACIÓN  */
+h6 {
+    font: 33px Bodoni MT Black;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h6.linea {
+    position: relative;
+    z-index: 1;
+}
+
+h6.linea:before {
+    border-top: 3px solid #030303;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h6.linea span {
+    background: rgb(0, 0, 0);
+    padding: 0 15px;
+}   
+
+.footer{
+    background-color: lightgray;
+}
+
+/* OFICINA */
+.oficina {
+    background-color: rgb(225, 16, 100) !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.tipsoficina {
+    background-color: rgb(225, 16, 100) !important;
+    max-width: 75%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+ 
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    }
+    img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+    } 
+
